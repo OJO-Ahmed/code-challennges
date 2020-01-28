@@ -47,13 +47,11 @@ var removePalindromeSub = function(s) {
     let len = s.length
     if( len > 0){
         let testArray = [...(s.split(""))]
-        console.log(testArray)
         if(s.split("").reverse().join("") === s){
             return 1
         }else{
             for(let i = 0; i < len; i++){
                 let res = testArray.slice(i,1)
-                console.log(res)
                 let resArray = [...res]
                 let val = resArray.join("")
                 if(resArray.reverse().join("") == val){
